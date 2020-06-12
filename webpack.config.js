@@ -10,7 +10,7 @@ module.exports = {
     app: "./src/index.js"
   },
   output: {
-    filename: "[name].[contenthash].js",
+    filename: "[name].js",
     path: path.resolve(__dirname, "dist")
   },
   module: {
@@ -40,17 +40,17 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: "Output Management",
-      hash: true
-    }),
-    new HtmlWebpackPlugin({
       template: "./src/index.html",
       inject: true,
       hash: true,
       chunks: ["index"],
       filename: "index.html"
     }),
-    new HtmlWebpackTagsPlugin({ tags: ["bundle.js", "app.css"], append: true }),
+    new HtmlWebpackTagsPlugin({
+      tags: ["bundle.js", "app.css"],
+      append: true,
+      useHash: true
+    }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
