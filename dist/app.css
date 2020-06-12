@@ -9,7 +9,7 @@ body {
 .box {
   padding: 0 2em;
   box-sizing: border-box;
-  border: 5px solid rgb(168, 81, 0);
+  border: 5px solid rgb(0, 11, 168);
 }
 
 @media only screen and (min-width: 600px) {
@@ -27,3 +27,6 @@ body {
   }
 }
 
+body {
+  background: #d11616;
+}
