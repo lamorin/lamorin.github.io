@@ -1,5 +1,56 @@
-$negro: rgb(209, 22, 22);
+$base-font: 1;
+$base-font-em: 1rem;
+$base-line-height: 1.8em;
+$perfect-fourth-ratio: 1.3333333;
+$ratio: $perfect-fourth-ratio;
+
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+}
 
 body {
-  background: $negro;
+  font-size: $base-font;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: $base-font-em * $ratio * $ratio * $ratio;
+  margin-top: $base-line-height / ($base-font * $ratio * $ratio * $ratio);
+  margin-bottom: $base-line-height / ($base-font * $ratio * $ratio * $ratio);
+  line-height: $base-line-height / ($base-font * $ratio * $ratio * $ratio);
+}
+
+h2 {
+  font-size: $base-font-em * $ratio * $ratio;
+  margin-top: $base-line-height / ($base-font * $ratio * $ratio);
+  margin-bottom: $base-line-height / ($base-font * $ratio * $ratio);
+  line-height: $base-line-height / ($base-font * $ratio * $ratio);
+}
+
+h3 {
+  font-size: $base-font-em * $ratio;
+  margin-top: $base-line-height / ($base-font * $ratio);
+  margin-bottom: $base-line-height / ($base-font * $ratio);
+  line-height: $base-line-height / ($base-font * $ratio);
+}
+
+h4 {
+  font-size: $base-font-em;
+}
+
+h5 {
+  font-size: $base-font-em / $ratio;
+}
+
+h6 {
+  font-size: $base-font-em / ($ratio * $ratio);
+}
+
+p {
+  font-size: $base-font-em;
 }

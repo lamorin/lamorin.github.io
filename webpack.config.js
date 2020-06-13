@@ -58,6 +58,13 @@ module.exports = {
       chunks: ["index"],
       filename: "index.html"
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/vertical-rythm.html",
+      inject: true,
+      hash: true,
+      chunks: ["index"],
+      filename: "vertical-rythm.html"
+    }),
     new HtmlWebpackTagsPlugin({
       tags: ["bundle.js", "app.css"],
       append: true,

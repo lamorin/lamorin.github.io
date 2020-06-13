@@ -1,2 +1,1 @@
-import "./style.css";
-import "./sass.scss";
+import "./vertical-rythm.scss";
