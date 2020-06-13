@@ -1,5 +1,5 @@
-$base-font-size: 1rem;
-$rythm-unit-rem: 1.2rem;
+$base-font-size: 16px;
+$rythm-unit-rem: 16px;
 
 $perfect-fourth: 1.333333333;
 $golden: 1.618;
@@ -12,11 +12,13 @@ $margin-right-factor: 0;
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
+  color: black !important;
   position: relative;
-  font-size: 90%; // 16px
+  font-size: 100%; // 16px
   line-height: $rythm-unit-rem; // body line-height should be the vertical rythm unit
 }
 
@@ -26,40 +28,49 @@ body {
   padding: 0 $rythm-unit-rem;
 }
 
+.container {
+  position: relative;
+  z-index: 10;
+}
+
 img {
   width: 100%;
 }
 
 h1 {
-  font-size: $base-font-size * $ratio * $ratio * $ratio;
-  line-height: $base-font-size * $ratio * $ratio * $ratio;
-  margin: $rythm-unit-rem;
-  margin-left: $rythm-unit-rem * $margin-left-factor;
-  margin-right: $rythm-unit-rem * $margin-right-factor;
+  font-size: $base-font-size;
+  line-height: $rythm-unit-rem;
+  background-color: rgba(3, 3, 3, 0.1);
+  //margin: $rythm-unit-rem;
+  //margin-left: $rythm-unit-rem * $margin-left-factor;
+  //margin-right: $rythm-unit-rem * $margin-right-factor;
 }
 
 h2 {
-  font-size: $base-font-size * $ratio * $ratio;
-  line-height: $base-font-size * $ratio;
-  margin: $rythm-unit-rem;
-  margin-left: $rythm-unit-rem * $margin-left-factor;
-  margin-right: $rythm-unit-rem * $margin-right-factor;
+  font-size: $base-font-size;
+  line-height: $rythm-unit-rem;
+  background-color: rgba(3, 3, 3, 0.1);
+  //margin: $rythm-unit-rem;
+  //margin-left: $rythm-unit-rem * $margin-left-factor;
+  //margin-right: $rythm-unit-rem * $margin-right-factor;
 }
 
 h3 {
-  font-size: $base-font-size * $ratio;
-  line-height: $base-font-size * $ratio;
-  margin: $rythm-unit-rem / ($ratio * $ratio * $ratio);
-  margin-left: $rythm-unit-rem * $margin-left-factor;
-  margin-right: $rythm-unit-rem * $margin-right-factor;
+  font-size: $base-font-size;
+  line-height: $rythm-unit-rem;
+  background-color: rgba(3, 3, 3, 0.1);
+  //margin: $rythm-unit-rem / ($ratio * $ratio * $ratio);
+  //margin-left: $rythm-unit-rem * $margin-left-factor;
+  //margin-right: $rythm-unit-rem * $margin-right-factor;
 }
 
 p {
   font-size: $base-font-size;
-  line-height: $base-font-size * $ratio;
-  margin: $rythm-unit-rem * $ratio * 0.75;
-  margin-left: $rythm-unit-rem * $margin-left-factor;
-  margin-right: $rythm-unit-rem * $margin-right-factor;
+  line-height: $rythm-unit-rem;
+  background-color: rgba(3, 3, 3, 0.1);
+  //margin: $rythm-unit-rem * $ratio * 0.75;
+  //margin-left: $rythm-unit-rem * $margin-left-factor;
+  //margin-right: $rythm-unit-rem * $margin-right-factor;
 }
 
 //.row {
@@ -175,6 +186,7 @@ p {
     p {
       margin-left: 0;
       margin-right: 0;
+      background-color: rgba(3, 3, 3, 0);
 
       &:first-child {
         margin-top: 0;

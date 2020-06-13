@@ -1,18 +1,25 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
+  color: black !important;
   position: relative;
-  font-size: 90%;
-  line-height: 1.2rem;
+  font-size: 100%;
+  line-height: 16px;
 }
 
 body {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.2rem;
+  padding: 0 16px;
+}
+
+.container {
+  position: relative;
+  z-index: 10;
 }
 
 img {
@@ -20,35 +27,27 @@ img {
 }
 
 h1 {
-  font-size: 4.235801032rem;
-  line-height: 4.235801032rem;
-  margin: 1.2rem;
-  margin-left: 0rem;
-  margin-right: 0rem;
+  font-size: 16px;
+  line-height: 16px;
+  background-color: rgba(3, 3, 3, 0.1);
 }
 
 h2 {
-  font-size: 2.617924rem;
-  line-height: 1.618rem;
-  margin: 1.2rem;
-  margin-left: 0rem;
-  margin-right: 0rem;
+  font-size: 16px;
+  line-height: 16px;
+  background-color: rgba(3, 3, 3, 0.1);
 }
 
 h3 {
-  font-size: 1.618rem;
-  line-height: 1.618rem;
-  margin: 0.2832994258rem;
-  margin-left: 0rem;
-  margin-right: 0rem;
+  font-size: 16px;
+  line-height: 16px;
+  background-color: rgba(3, 3, 3, 0.1);
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.618rem;
-  margin: 1.4562rem;
-  margin-left: 0rem;
-  margin-right: 0rem;
+  font-size: 16px;
+  line-height: 16px;
+  background-color: rgba(3, 3, 3, 0.1);
 }
 
 .box {
@@ -66,7 +65,7 @@ p {
   top: 0;
 }
 .grid .row {
-  height: 1.2rem;
+  height: 16px;
   border-bottom: 1px solid #b9b9b9;
 }
 .grid p {
@@ -134,6 +133,7 @@ p {
   .box p {
     margin-left: 0;
     margin-right: 0;
+    background-color: rgba(3, 3, 3, 0);
   }
   .box p:first-child {
     margin-top: 0;
