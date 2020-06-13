@@ -1,3 +1,4 @@
+$base-font-size: 1rem;
 $rythm-unit-rem: 1.2rem;
 
 $perfect-fourth: 1.333333333;
@@ -5,8 +6,8 @@ $golden: 1.618;
 
 $ratio: $golden;
 
-$margin-left-factor: 1.25;
-$margin-right-factor: 1.25;
+$margin-left-factor: 0;
+$margin-right-factor: 0;
 
 * {
   margin: 0;
@@ -14,7 +15,8 @@ $margin-right-factor: 1.25;
 }
 
 html {
-  font-size: 120%; // 16px
+  position: relative;
+  font-size: 90%; // 16px
   line-height: $rythm-unit-rem; // body line-height should be the vertical rythm unit
 }
 
@@ -24,60 +26,159 @@ body {
   padding: 0 $rythm-unit-rem;
 }
 
+img {
+  width: 100%;
+}
+
 h1 {
-  font-size: 1rem * $ratio * $ratio * $ratio;
-  line-height: $rythm-unit-rem * $ratio * $ratio * $ratio;
-  margin: $rythm-unit-rem / $ratio;
+  font-size: $base-font-size * $ratio * $ratio * $ratio;
+  line-height: $base-font-size * $ratio * $ratio * $ratio;
+  margin: $rythm-unit-rem;
   margin-left: $rythm-unit-rem * $margin-left-factor;
   margin-right: $rythm-unit-rem * $margin-right-factor;
 }
 
 h2 {
-  font-size: 1rem * $ratio * $ratio;
-  line-height: $rythm-unit-rem * $ratio * $ratio;
-  margin: $rythm-unit-rem / $ratio;
+  font-size: $base-font-size * $ratio * $ratio;
+  line-height: $base-font-size * $ratio;
+  margin: $rythm-unit-rem;
   margin-left: $rythm-unit-rem * $margin-left-factor;
   margin-right: $rythm-unit-rem * $margin-right-factor;
 }
 
 h3 {
-  font-size: 1rem * $ratio;
-  line-height: $rythm-unit-rem * $ratio;
-  margin: $rythm-unit-rem / ($ratio * $ratio);
+  font-size: $base-font-size * $ratio;
+  line-height: $base-font-size * $ratio;
+  margin: $rythm-unit-rem / ($ratio * $ratio * $ratio);
   margin-left: $rythm-unit-rem * $margin-left-factor;
   margin-right: $rythm-unit-rem * $margin-right-factor;
 }
 
 p {
-  font-size: 1rem;
-  line-height: $rythm-unit-rem;
-  margin: $rythm-unit-rem / ($ratio);
+  font-size: $base-font-size;
+  line-height: $base-font-size * $ratio;
+  margin: $rythm-unit-rem * $ratio * 0.75;
   margin-left: $rythm-unit-rem * $margin-left-factor;
   margin-right: $rythm-unit-rem * $margin-right-factor;
 }
 
-.row {
-  display: flex;
-}
+//.row {
+//  display: flex;
+//}
 
 .box {
-  font-size: 0;
   //padding: $rythm-unit-rem * 0.25;
-  width: 50%;
+  //width: 50%;
   //border: 1px solid red;
   box-sizing: border-box;
 
-  margin: $rythm-unit-rem;
+  //margin: $rythm-unit-rem;
 
-  img {
-    width: 100%;
-  }
   p {
     margin-left: 0;
     margin-right: 0;
 
-    &:first-child {
-      margin-top: 0;
+    // &:first-child {
+    //   margin-top: 0;
+    // }
+  }
+}
+
+.grid {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+
+  .row {
+    height: $rythm-unit-rem;
+    border-bottom: 1px solid rgb(185, 185, 185);
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  $base-font-size: 100%;
+  $rythm-unit-rem: 1.2rem;
+
+  $perfect-fourth: 1.333333333;
+  $golden: 1.618;
+
+  $ratio: $golden;
+
+  $margin-left-factor: 1.25;
+  $margin-right-factor: 1.25;
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: $base-font-size; // 16px
+    line-height: $rythm-unit-rem; // body line-height should be the vertical rythm unit
+  }
+
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $rythm-unit-rem;
+  }
+
+  h1 {
+    font-size: $base-font-size * $ratio * $ratio * $ratio;
+    line-height: $rythm-unit-rem * $ratio * $ratio * $ratio;
+    margin: $rythm-unit-rem / $ratio;
+    margin-left: $rythm-unit-rem * $margin-left-factor;
+    margin-right: $rythm-unit-rem * $margin-right-factor;
+  }
+
+  h2 {
+    font-size: $base-font-size * $ratio * $ratio;
+    line-height: $rythm-unit-rem * $ratio * $ratio;
+    margin: $rythm-unit-rem / $ratio;
+    margin-left: $rythm-unit-rem * $margin-left-factor;
+    margin-right: $rythm-unit-rem * $margin-right-factor;
+  }
+
+  h3 {
+    font-size: $base-font-size * $ratio;
+    line-height: $rythm-unit-rem * $ratio;
+    margin: $rythm-unit-rem / ($ratio * $ratio);
+    margin-left: $rythm-unit-rem * $margin-left-factor;
+    margin-right: $rythm-unit-rem * $margin-right-factor;
+  }
+
+  p {
+    font-size: $base-font-size;
+    line-height: $rythm-unit-rem;
+    margin: $rythm-unit-rem / ($ratio);
+    margin-left: $rythm-unit-rem * $margin-left-factor;
+    margin-right: $rythm-unit-rem * $margin-right-factor;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .box {
+    //padding: $rythm-unit-rem * 0.25;
+    width: 50%;
+    //border: 1px solid red;
+    box-sizing: border-box;
+
+    margin: $rythm-unit-rem;
+
+    p {
+      margin-left: 0;
+      margin-right: 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
     }
   }
 }

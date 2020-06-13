@@ -4,7 +4,8 @@
 }
 
 html {
-  font-size: 120%;
+  position: relative;
+  font-size: 90%;
   line-height: 1.2rem;
 }
 
@@ -14,55 +15,127 @@ body {
   padding: 0 1.2rem;
 }
 
+img {
+  width: 100%;
+}
+
 h1 {
   font-size: 4.235801032rem;
-  line-height: 5.0829612384rem;
-  margin: 0.7416563659rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  line-height: 4.235801032rem;
+  margin: 1.2rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
 }
 
 h2 {
   font-size: 2.617924rem;
-  line-height: 3.1415088rem;
-  margin: 0.7416563659rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  line-height: 1.618rem;
+  margin: 1.2rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
 }
 
 h3 {
   font-size: 1.618rem;
-  line-height: 1.9416rem;
-  margin: 0.4583784709rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  line-height: 1.618rem;
+  margin: 0.2832994258rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
 }
 
 p {
   font-size: 1rem;
-  line-height: 1.2rem;
-  margin: 0.7416563659rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-.row {
-  display: flex;
+  line-height: 1.618rem;
+  margin: 1.4562rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
 }
 
 .box {
-  font-size: 0;
-  width: 50%;
   box-sizing: border-box;
-  margin: 1.2rem;
-}
-.box img {
-  width: 100%;
 }
 .box p {
   margin-left: 0;
   margin-right: 0;
 }
-.box p:first-child {
-  margin-top: 0;
+
+.grid {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+}
+.grid .row {
+  height: 1.2rem;
+  border-bottom: 1px solid #b9b9b9;
+}
+.grid p {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 100%;
+    line-height: 1.2rem;
+  }
+
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+  }
+
+  h1 {
+    font-size: 423.5801032%;
+    line-height: 5.0829612384rem;
+    margin: 0.7416563659rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  h2 {
+    font-size: 261.7924%;
+    line-height: 3.1415088rem;
+    margin: 0.7416563659rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  h3 {
+    font-size: 161.8%;
+    line-height: 1.9416rem;
+    margin: 0.4583784709rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  p {
+    font-size: 100%;
+    line-height: 1.2rem;
+    margin: 0.7416563659rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .box {
+    width: 50%;
+    box-sizing: border-box;
+    margin: 1.2rem;
+  }
+  .box p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .box p:first-child {
+    margin-top: 0;
+  }
 }
