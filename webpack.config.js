@@ -56,7 +56,7 @@ module.exports = {
       inject: true,
       hash: true,
       chunks: ["index"],
-      filename: "index.html"
+      filename: "index-x.html"
     }),
     new HtmlWebpackPlugin({
       template: "./src/vertical-rythm.html",

@@ -1,134 +1,86 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  color: black !important;
-  position: relative;
-  font-size: 100%;
-  line-height: 16px;
+.flex {
+  display: flex !important;
 }
 
-body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 16px;
+html {
+  font-size: 100%;
+  line-height: 1.5rem;
 }
 
 .container {
   position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
   z-index: 10;
 }
 
 img {
   width: 100%;
 }
-
-h1 {
-  font-size: 16px;
-  line-height: 16px;
-  background-color: rgba(3, 3, 3, 0.1);
-}
-
-h2 {
-  font-size: 16px;
-  line-height: 16px;
-  background-color: rgba(3, 3, 3, 0.1);
-}
-
-h3 {
-  font-size: 16px;
-  line-height: 16px;
-  background-color: rgba(3, 3, 3, 0.1);
+img.dog {
+  margin-top: 10px;
 }
 
 p {
-  font-size: 16px;
-  line-height: 16px;
-  background-color: rgba(3, 3, 3, 0.1);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 8rem;
+  line-height: 0.75;
+  margin-top: 0.1875rem;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 0.75;
+  margin-top: 0.375rem;
+  margin-bottom: 0.375rem;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 0.75;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .box {
   box-sizing: border-box;
 }
-.box p {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 .grid {
   position: absolute;
   width: 100vw;
   height: 100vh;
   top: 0;
 }
-.grid .row {
-  height: 16px;
-  border-bottom: 1px solid #b9b9b9;
-}
-.grid p {
+.grid * {
   margin: 0;
+  box-sizing: border-box;
+}
+.grid .line {
+  height: 1.5rem;
+  border-bottom: 1px solid #b9b9b9;
 }
 
 @media screen and (min-width: 768px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-  html {
-    font-size: 100%;
-    line-height: 1.2rem;
-  }
-
-  body {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.2rem;
-  }
-
-  h1 {
-    font-size: 423.5801032%;
-    line-height: 5.0829612384rem;
-    margin: 0.7416563659rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
-  h2 {
-    font-size: 261.7924%;
-    line-height: 3.1415088rem;
-    margin: 0.7416563659rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
-  h3 {
-    font-size: 161.8%;
-    line-height: 1.9416rem;
-    margin: 0.4583784709rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
-  p {
-    font-size: 100%;
-    line-height: 1.2rem;
-    margin: 0.7416563659rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
-  .row {
-    display: flex;
-  }
-
   .box {
     width: 50%;
     box-sizing: border-box;
-    margin: 1.2rem;
+  }
+  .box.right {
+    padding-left: 0.75rem;
+  }
+  .box.left {
+    padding-right: 0.75rem;
   }
   .box p {
     margin-left: 0;
