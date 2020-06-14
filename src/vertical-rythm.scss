@@ -191,7 +191,7 @@ h3 {
 
   h1 {
     font-size: $base-font-size * $ratio * $ratio * $ratio;
-    line-height: $base-font-size * $ratio * $ratio * $ratio * $ratio;
+    line-height: $ratio;
     margin-top: $vertical-rythm-unit /
       ($base-font-size * $ratio * $ratio * $ratio);
     margin-bottom: $vertical-rythm-unit /
@@ -200,14 +200,14 @@ h3 {
 
   h2 {
     font-size: $base-font-size * $ratio * $ratio;
-    line-height: $base-font-size * $ratio * $ratio * $ratio;
+    line-height: $ratio;
     margin-top: $vertical-rythm-unit / ($base-font-size * $ratio * $ratio);
     margin-bottom: $vertical-rythm-unit / ($base-font-size * $ratio * $ratio);
   }
 
   h3 {
     font-size: $base-font-size * $ratio;
-    line-height: $base-font-size * $ratio * 0.75/ ($base-font-size * $ratio);
+    line-height: $ratio;
     margin-top: $vertical-rythm-unit / ($base-font-size * $ratio);
     margin-bottom: $vertical-rythm-unit / ($base-font-size * $ratio);
   }

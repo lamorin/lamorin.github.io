@@ -150,21 +150,21 @@ h3 {
 
   h1 {
     font-size: 2.3703703686rem;
-    line-height: 3.160493824rem;
+    line-height: 1.333333333;
     margin-top: 0.6328125005;
     margin-bottom: 0.6328125005;
   }
 
   h2 {
     font-size: 1.7777777769rem;
-    line-height: 2.3703703686rem;
+    line-height: 1.333333333;
     margin-top: 0.8437500004;
     margin-bottom: 0.8437500004;
   }
 
   h3 {
     font-size: 1.333333333rem;
-    line-height: 0.75;
+    line-height: 1.333333333;
     margin-top: 1.1250000003;
     margin-bottom: 1.1250000003;
   }
