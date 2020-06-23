@@ -1,3 +1,4 @@
+@import "./variables";
 @import "./typography"; //$perfect-fourth: 1.333333333;
 //$golden: 1.618;
 //$custom: 2;
@@ -38,6 +39,7 @@ img {
 }
 
 p {
+  font-size: $base-font-size;
   //font-size: $base-font-size;
   //line-height: $vertical-rythm-unit;
   //margin-top: $vertical-rythm-unit; // must macth vertical rythm
@@ -45,6 +47,7 @@ p {
 }
 
 h1 {
+  font-size: $base-font-size * $ratio * $ratio * $ratio;
   //font-size: $base-font-size * $ratio * $ratio * $ratio;
   //line-height: $base-font-size * $ratio * $ratio * $ratio * 0.75/ ($base-font-size * $ratio * $ratio * $ratio);
   // margin-top: 1rem * $vertical-rythm-unit / ($base-font-size * $ratio * $ratio * $ratio);
@@ -52,6 +55,7 @@ h1 {
 }
 
 h2 {
+  font-size: $base-font-size * $ratio * $ratio;
   //font-size: $base-font-size * $ratio * $ratio;
   //line-height: $base-font-size * $ratio * $ratio * 0.75/ ($base-font-size * $ratio * $ratio);
   //margin-top: 1rem * $vertical-rythm-unit / ($base-font-size * $ratio * $ratio);
@@ -59,6 +63,7 @@ h2 {
 }
 
 h3 {
+  font-size: $base-font-size * $ratio;
   //font-size: $base-font-size * $ratio;
   //line-height: $base-font-size * $ratio * 0.75/ ($base-font-size * $ratio);
   //margin-top: 1rem * $vertical-rythm-unit / ($base-font-size * $ratio);
