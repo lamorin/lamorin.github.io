@@ -94,18 +94,18 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _vertical_rythm_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vertical-rythm.scss */ \"./src/vertical-rythm.scss\");\n/* harmony import */ var _vertical_rythm_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vertical_rythm_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.scss */ \"./src/main.scss\");\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/vertical-rythm.scss":
-/*!*********************************!*\
-  !*** ./src/vertical-rythm.scss ***!
-  \*********************************/
+/***/ "./src/main.scss":
+/*!***********************!*\
+  !*** ./src/main.scss ***!
+  \***********************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/vertical-rythm.scss?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/main.scss?");
 
 /***/ })
 

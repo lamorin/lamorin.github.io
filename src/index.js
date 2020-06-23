@@ -1,1 +1,1 @@
-import "./vertical-rythm.scss";
+import "./main.scss";

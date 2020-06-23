@@ -1,205 +1,38 @@
-* {
-  box-sizing: border-box;
+html,
+button {
+  font-family: "Roboto", sans-serif;
 }
 
 html {
   font-size: 100%;
-  line-height: 15px;
 }
 
 .container {
-  position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  z-index: 10;
-}
-
-.row {
-  padding-right: 7.5px;
-  padding-left: 7.5px;
 }
 
 img {
   width: 100%;
 }
-img.dog {
-  margin-top: 0px;
-}
-
-p {
-  font-size: 12px;
-  line-height: 15px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-h1 {
-  font-size: 28.4444444231px;
-  line-height: 0.75;
-  margin-top: 0.5273437504rem;
-  margin-bottom: 19.999999995px;
-}
-
-h2 {
-  font-size: 21.3333333227px;
-  line-height: 0.75;
-  margin-top: 0.7031250004rem;
-  margin-bottom: 0.7031250004rem;
-}
-
-h3 {
-  font-size: 15.999999996px;
-  line-height: 0.75;
-  margin-top: 0.9375000002rem;
-  margin-bottom: 0.9375000002rem;
-}
-
-.grid {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-}
-.grid * {
-  margin: 0;
-  box-sizing: border-box;
-}
-.grid .line {
-  height: 15px;
-  border-bottom: 1px solid #b9b9b9;
-}
-
 @media screen and (min-width: 768px) {
   .flex {
-    display: flex !important;
-  }
-
-  p {
-    font-size: 14px;
-    line-height: 17.5px;
-    margin-top: 17.5px;
-    margin-bottom: 17.5px;
-  }
-
-  h1 {
-    font-size: 33.1851851603px;
-    line-height: 0.75;
-    margin-top: 0.5273437504rem;
-    margin-bottom: 23.3333333275px;
-  }
-
-  h2 {
-    font-size: 24.8888888764px;
-    line-height: 0.75;
-    margin-top: 0.7031250004rem;
-    margin-bottom: 0.7031250004rem;
-  }
-
-  h3 {
-    font-size: 18.666666662px;
-    line-height: 0.75;
-    margin-top: 0.9375000002rem;
-    margin-bottom: 0.9375000002rem;
+    display: flex;
   }
 
   .box {
     width: 50%;
-    box-sizing: border-box;
-  }
-  .box.right {
-    padding-left: 8.75px;
-  }
-  .box.left {
-    padding-right: 8.75px;
-  }
-  .box p {
-    margin-left: 0;
-    margin-right: 0;
-    background-color: rgba(3, 3, 3, 0);
   }
   .box p:first-child {
     margin-top: 0;
-  }
-
-  .grid {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-  }
-  .grid * {
-    margin: 0;
-    box-sizing: border-box;
-  }
-  .grid .line {
-    height: 17.5px;
-    border-bottom: 1px solid #b9b9b9;
   }
 }
 @media screen and (min-width: 1200px) {
   .flex {
-    display: flex !important;
-  }
-
-  p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  h1 {
-    font-size: 2.3703703686rem;
-    line-height: 1.333333333;
-    margin-top: 0.6328125005;
-    margin-bottom: 0.6328125005;
-  }
-
-  h2 {
-    font-size: 1.7777777769rem;
-    line-height: 1.333333333;
-    margin-top: 0.8437500004;
-    margin-bottom: 0.8437500004;
-  }
-
-  h3 {
-    font-size: 1.333333333rem;
-    line-height: 1.333333333;
-    margin-top: 1.1250000003;
-    margin-bottom: 1.1250000003;
+    display: flex;
   }
 
   .box {
     width: 50%;
-    box-sizing: border-box;
-  }
-  .box.right {
-    padding-left: 0.75rem;
-  }
-  .box.left {
-    padding-right: 0.75rem;
-  }
-  .box p {
-    margin-left: 0;
-    margin-right: 0;
-    background-color: rgba(3, 3, 3, 0);
-  }
-  .box p:first-child {
-    margin-top: 0;
-  }
-
-  .grid {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 5px;
-  }
-  .grid * {
-    margin: 0;
-    box-sizing: border-box;
-  }
-  .grid .line {
-    height: 1.5rem;
-    border-bottom: 1px solid #b9b9b9;
   }
 }
