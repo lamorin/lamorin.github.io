@@ -8,9 +8,9 @@
 //$vertical-rythm-unit: $base-font-size * $vertical-rythm-multiplier;
 //$ratio: $perfect-fourth;
 * {
-  //margin: 0;
-  //padding: 0;
-  // box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -20,14 +20,14 @@ html {
 
 .container {
   //  position: relative;
-  max-width: 1200px;
+  max-width: 920px;
   margin: 0 auto;
   //  z-index: 10;
 }
 
 .row {
-  //padding-right: $vertical-rythm-unit * 0.5;
-  //padding-left: $vertical-rythm-unit * 0.5;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 img {

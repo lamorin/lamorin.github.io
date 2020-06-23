@@ -3,13 +3,24 @@ button {
   font-family: "Roboto", sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 100%;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 920px;
   margin: 0 auto;
+}
+
+.row {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 img {
