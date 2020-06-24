@@ -1,3 +1,4 @@
+@import "./mixins";
 @import "./variables";
 @import "./typography";
 
@@ -7,18 +8,14 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 100%; // 16px in most browsers
-}
-
 .container {
-  max-width: 920px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .row {
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding-right: 1rem * $vertical-unit;
+  padding-left: 1rem * $vertical-unit;
 }
 
 img {
@@ -29,22 +26,51 @@ img {
 }
 
 p {
-  font-size: $base-font-size;
+  @include fluid-type($min_width, $max_width, 1rem, $max_font);
+  margin-top: 1.5rem * $vertical-unit;
+  margin-bottom: 1.5rem * $vertical-unit;
+  line-height: $vertical-unit;
 }
 
 h1 {
-  font-size: $base-font-size * $ratio * $ratio * $ratio;
+  @include fluid-type(
+    $min_width,
+    $max_width,
+    1rem * $ratio * $ratio * $ratio,
+    $max_font * $ratio * $ratio * $ratio
+  );
+  margin-top: 1.5rem * $vertical-unit;
+  margin-bottom: 1.5rem * $vertical-unit;
+  line-height: $vertical-unit;
 }
 
 h2 {
-  font-size: $base-font-size * $ratio * $ratio;
+  @include fluid-type(
+    $min_width,
+    $max_width,
+    1rem * $ratio * $ratio,
+    $max_font * $ratio * $ratio
+  );
+  margin-top: 3rem * $vertical-unit;
+  margin-bottom: 1.5rem * $vertical-unit;
+  line-height: $vertical-unit;
 }
 
 h3 {
-  font-size: $base-font-size * $ratio;
+  @include fluid-type(
+    $min_width,
+    $max_width,
+    1rem * $ratio,
+    $max_font * $ratio
+  );
+  margin-top: 3rem * $vertical-unit;
+  margin-bottom: 1.5rem * $vertical-unit;
+  line-height: $vertical-unit;
 }
 
 @media screen and (min-width: 768px) {
+  $vertical-unit: 1;
+
   .flex {
     display: flex;
   }
@@ -65,9 +91,11 @@ h3 {
     width: 50%;
 
     &.right {
+      margin-left: 1rem * 0.5 * $vertical-unit;
     }
 
     &.left {
+      margin-right: 1rem * 0.5 * $vertical-unit;
     }
 
     p {

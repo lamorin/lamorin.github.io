@@ -1,0 +1,21 @@
+//https://css-tricks.com/snippets/css/fluid-typography/
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  & {
+    font-size: $min-font-size;
+    @media screen and (min-width: $min-vw) {
+      font-size: calc(
+        #{strip-unit($min-font-size) * $base-font-px} + #{strip-unit(
+            (strip-unit($max-font-size) - strip-unit($min-font-size) * 1px) *
+              $base-font-px
+          )} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+      );
+    }
+    @media screen and (min-width: $max-vw) {
+      font-size: $max-font-size;
+    }
+  }
+}
