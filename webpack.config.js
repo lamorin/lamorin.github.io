@@ -7,11 +7,11 @@ const HtmlWebpackTagsPlugin = require("html-webpack-tags-plugin");
 module.exports = {
   mode: "development",
   entry: {
-    app: "./src/index.js"
+    app: "./src/index.js",
   },
   output: {
     filename: "[name].js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
   },
   module: {
     rules: [
@@ -29,11 +29,11 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: "/public/path/to/"
-            }
+              publicPath: "/public/path/to/",
+            },
           },
-          "css-loader"
-        ]
+          "css-loader",
+        ],
       },
       {
         test: /\.s[ac]ss$/i,
@@ -44,10 +44,10 @@ module.exports = {
           // Translates CSS into CommonJS
           "css-loader",
           // Compiles Sass to CSS
-          "sass-loader"
-        ]
-      }
-    ]
+          "sass-loader",
+        ],
+      },
+    ],
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -56,25 +56,32 @@ module.exports = {
       inject: true,
       hash: true,
       chunks: ["index"],
-      filename: "index.html"
+      filename: "index.html",
     }),
     new HtmlWebpackPlugin({
       template: "./src/vertical-rythm.html",
       inject: true,
       hash: true,
       chunks: ["index"],
-      filename: "vertical-rythm.html"
+      filename: "vertical-rythm.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/bootstrap.html",
+      inject: true,
+      hash: true,
+      chunks: ["index"],
+      filename: "bootstrap.html",
     }),
     new HtmlWebpackTagsPlugin({
       tags: ["bundle.js", "app.css"],
       append: true,
-      useHash: true
+      useHash: true,
     }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
       filename: "[name].css",
-      chunkFilename: "[id].css"
-    })
-  ]
+      chunkFilename: "[id].css",
+    }),
+  ],
 };
