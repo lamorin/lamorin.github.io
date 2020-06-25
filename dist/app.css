@@ -1,7 +1,3 @@
-html {
-  font-size: 16px;
-}
-
 body,
 button {
   font-family: "Roboto", sans-serif;
@@ -19,86 +15,86 @@ button {
 }
 
 .row {
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
 img {
   width: 100%;
 }
 p {
-  margin-top: 2.25rem;
-  margin-bottom: 2.25rem;
-  line-height: 1.5;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  line-height: 24px;
 }
 p {
-  font-size: 1rem;
+  font-size: 18px;
 }
 @media screen and (min-width: 320px) {
   p {
-    font-size: calc( 16px + 8 * ((100vw - 320px) / 880) );
+    font-size: calc( 18px + 6 * ((100vw - 320px) / 880) );
   }
 }
 @media screen and (min-width: 1200px) {
   p {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 }
 
 h1 {
-  margin-top: 2.25rem;
-  margin-bottom: 2.25rem;
-  line-height: 1.5;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  line-height: 41.472px;
 }
 h1 {
-  font-size: 1.728rem;
+  font-size: 31.104px;
 }
 @media screen and (min-width: 320px) {
   h1 {
-    font-size: calc( 27.648px + 13.824 * ((100vw - 320px) / 880) );
+    font-size: calc( 31.104px + 10.368 * ((100vw - 320px) / 880) );
   }
 }
 @media screen and (min-width: 1200px) {
   h1 {
-    font-size: 2.592rem;
+    font-size: 41.472px;
   }
 }
 
 h2 {
-  margin-top: 4.5rem;
-  margin-bottom: 2.25rem;
-  line-height: 1.5;
+  margin-top: 72px;
+  margin-bottom: 36px;
+  line-height: 34.56px;
 }
 h2 {
-  font-size: 1.44rem;
+  font-size: 25.92px;
 }
 @media screen and (min-width: 320px) {
   h2 {
-    font-size: calc( 23.04px + 11.52 * ((100vw - 320px) / 880) );
+    font-size: calc( 25.92px + 8.64 * ((100vw - 320px) / 880) );
   }
 }
 @media screen and (min-width: 1200px) {
   h2 {
-    font-size: 2.16rem;
+    font-size: 34.56px;
   }
 }
 
 h3 {
-  margin-top: 4.5rem;
-  margin-bottom: 2.25rem;
-  line-height: 1.5;
+  margin-top: 72px;
+  margin-bottom: 36px;
+  line-height: 28.8px;
 }
 h3 {
-  font-size: 1.2rem;
+  font-size: 21.6px;
 }
 @media screen and (min-width: 320px) {
   h3 {
-    font-size: calc( 19.2px + 9.6 * ((100vw - 320px) / 880) );
+    font-size: calc( 21.6px + 7.2 * ((100vw - 320px) / 880) );
   }
 }
 @media screen and (min-width: 1200px) {
   h3 {
-    font-size: 1.8rem;
+    font-size: 28.8px;
   }
 }
 
@@ -111,10 +107,19 @@ h3 {
     width: 50%;
   }
   .box.right {
-    margin-left: 0.5rem;
+    margin-left: 12px;
   }
   .box.left {
-    margin-right: 0.5rem;
+    margin-right: 12px;
+  }
+  .box img {
+    display: block;
+  }
+  .box h1:first-child,
+.box h2:first-child,
+.box h3:first-child,
+.box p:first-child {
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1200px) {

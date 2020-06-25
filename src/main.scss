@@ -14,8 +14,8 @@
 }
 
 .row {
-  padding-right: 1rem * $vertical-unit;
-  padding-left: 1rem * $vertical-unit;
+  padding-right: $horizontal-unit;
+  padding-left: $horizontal-unit;
 }
 
 img {
@@ -26,9 +26,9 @@ img {
 }
 
 p {
-  @include fluid-type($min_width, $max_width, 1rem, $max_font);
-  margin-top: 1.5rem * $vertical-unit;
-  margin-bottom: 1.5rem * $vertical-unit;
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  margin-top: 1.5 * $vertical-unit;
+  margin-bottom: 1.5 * $vertical-unit;
   line-height: $vertical-unit;
 }
 
@@ -36,41 +36,39 @@ h1 {
   @include fluid-type(
     $min_width,
     $max_width,
-    1rem * $ratio * $ratio * $ratio,
+    $min_font * $ratio * $ratio * $ratio,
     $max_font * $ratio * $ratio * $ratio
   );
-  margin-top: 1.5rem * $vertical-unit;
-  margin-bottom: 1.5rem * $vertical-unit;
-  line-height: $vertical-unit;
+  margin-top: 1.5 * $vertical-unit;
+  margin-bottom: 1.5 * $vertical-unit;
+  line-height: $vertical-unit * $ratio * $ratio * $ratio;
 }
 
 h2 {
   @include fluid-type(
     $min_width,
     $max_width,
-    1rem * $ratio * $ratio,
+    $min_font * $ratio * $ratio,
     $max_font * $ratio * $ratio
   );
-  margin-top: 3rem * $vertical-unit;
-  margin-bottom: 1.5rem * $vertical-unit;
-  line-height: $vertical-unit;
+  margin-top: 3 * $vertical-unit;
+  margin-bottom: 1.5 * $vertical-unit;
+  line-height: $vertical-unit * $ratio * $ratio;
 }
 
 h3 {
   @include fluid-type(
     $min_width,
     $max_width,
-    1rem * $ratio,
+    $min_font * $ratio,
     $max_font * $ratio
   );
-  margin-top: 3rem * $vertical-unit;
-  margin-bottom: 1.5rem * $vertical-unit;
-  line-height: $vertical-unit;
+  margin-top: 3 * $vertical-unit;
+  margin-bottom: 1.5 * $vertical-unit;
+  line-height: $vertical-unit * $ratio;
 }
 
 @media screen and (min-width: 768px) {
-  $vertical-unit: 1;
-
   .flex {
     display: flex;
   }
@@ -91,15 +89,22 @@ h3 {
     width: 50%;
 
     &.right {
-      margin-left: 1rem * 0.5 * $vertical-unit;
+      margin-left: 0.5 * $horizontal-unit;
     }
 
     &.left {
-      margin-right: 1rem * 0.5 * $vertical-unit;
+      margin-right: 0.5 * $horizontal-unit;
+    }
+    img {
+      display: block;
     }
 
+    h1,
+    h2,
+    h3,
     p {
       &:first-child {
+        margin-top: 0;
       }
     }
   }
