@@ -7,5 +7,5 @@ $horizontal-unit: $vertical-unit;
 $min_width: 320px;
 $max_width: 1200px;
 
-$min_font: 18px;
-$max_font: 1.5 * $base-font;
+$min_font: $base-font;
+$max_font: $base-font;
