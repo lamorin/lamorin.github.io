@@ -5,7 +5,11 @@
 * {
   margin: 0;
   padding: 0;
+  line-height: $base-font * 1.5;
+  margin-top: 0;
+  margin-bottom: $base-font * 1.5;
   box-sizing: border-box;
+  border: 1px dashed grey;
 }
 
 .container {
@@ -27,35 +31,27 @@ img {
 
 p {
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
-  //margin-top: 1.5 * $vertical-unit;
-  margin-bottom: $vertical-unit;
-  line-height: $vertical-unit;
 }
 
 h1 {
   @include fluid-type(
     $min_width,
     $max_width,
-    $min_font * $ratio * $ratio * $ratio * $ratio,
-    $max_font * $ratio * $ratio * $ratio * $ratio
+    $min_font * $ratio * $ratio * $ratio,
+    $max_font * $ratio * $ratio * $ratio
   );
-  margin-top: 0;
-  margin-top: 32px;
-  margin-bottom: 1.333333 * $vertical-unit;
-  line-height: $vertical-unit * $ratio * $ratio * $ratio;
-  line-height: 1.2;
+
+  line-height: 1.3;
 }
 
 h2 {
   @include fluid-type(
     $min_width,
     $max_width,
-    $min_font * $ratio * $ratio * $ratio,
-    $max_font * $ratio * $ratio * $ratio
+    $min_font * $ratio * $ratio,
+    $max_font * $ratio * $ratio
   );
-  margin-top: 32px;
-  margin-bottom: $vertical-unit;
-  line-height: $vertical-unit * $ratio * $ratio * $ratio;
+
   line-height: 1.3;
 }
 
@@ -63,28 +59,16 @@ h3 {
   @include fluid-type(
     $min_width,
     $max_width,
-    $min_font * $ratio * $ratio,
-    $max_font * $ratio * $ratio
-  );
-  margin-top: 32px;
-  //margin-top: 0.666666 * $vertical-unit;
-  margin-bottom: 20px;
-  line-height: $vertical-unit * $ratio * $ratio;
-  line-height: 1.3;
-}
-
-h4 {
-  @include fluid-type(
-    $min_width,
-    $max_width,
     $min_font * $ratio,
     $max_font * $ratio
   );
-  //margin-top: 0.333333 * $vertical-unit;
-  margin-top: 32px;
-  margin-bottom: 0.666666 * $vertical-unit;
-  //margin-bottom: 1.5 * $vertical-unit;
-  line-height: $vertical-unit * $ratio;
+
+  line-height: 1.2;
+}
+
+h4 {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
   line-height: 1.2;
 }
 
