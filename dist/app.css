@@ -45,6 +45,7 @@ h1 {
   margin-top: 32px;
   margin-bottom: 31.999992px;
   line-height: 41.472px;
+  line-height: 1.2;
 }
 h1 {
   font-size: 33.1776px;
@@ -64,6 +65,7 @@ h2 {
   margin-top: 32px;
   margin-bottom: 24px;
   line-height: 41.472px;
+  line-height: 1.3;
 }
 h2 {
   font-size: 27.648px;
@@ -83,6 +85,7 @@ h3 {
   margin-top: 32px;
   margin-bottom: 20px;
   line-height: 34.56px;
+  line-height: 1.3;
 }
 h3 {
   font-size: 23.04px;
@@ -102,6 +105,7 @@ h4 {
   margin-top: 32px;
   margin-bottom: 15.999984px;
   line-height: 28.8px;
+  line-height: 1.2;
 }
 h4 {
   font-size: 19.2px;
